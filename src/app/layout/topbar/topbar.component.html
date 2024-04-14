@@ -1,19 +1,15 @@
-<div class="container">
+<div class="container" #container>
   <mat-toolbar>
-    <div class="header-logo">
-      <a href="#"
-        ><img class="logo" src="../../../assets/img/icon.png" alt="header-icon"
-      /></a>
-      <p class="nav-title">Juyel Hushen</p>
-    </div>
+    <p class="nav-title" fxShow.gt-sm>
+      Desenvolvedor de Software | Java | Spring boot | Angular
+    </p>
 
     <span class="spacer"></span>
     <div class="navItems" *ngIf="!isMobile">
       <ul>
         <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="contact">CONTACT</a></li>
+        <li><a href="#about">SOBRE</a></li>
+        <li><a href="#projects">PROJETOS</a></li>
       </ul>
     </div>
 

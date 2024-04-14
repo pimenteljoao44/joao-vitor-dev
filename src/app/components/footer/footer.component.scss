@@ -96,21 +96,14 @@
           }
 
           .button:nth-child(3) .icon {
-            background: radial-gradient(
-              circle at 30% 107%,
-              #fdf497 0%,
-              #fdf497 5%,
-              #fd5949 45%,
-              #d6249f 60%,
-              #285aeb 90%
-            );
+            background: #128c7e !important;
           }
 
           .button:nth-child(3):hover .icon {
             background: var(--white);
 
             a {
-              color: #e1306c;
+              color: #ccf7da;
 
               i {
                 font-size: 35px;
@@ -135,7 +128,7 @@
           }
 
           .button:nth-child(5) .icon {
-            background: #ff0000;
+            background: #128c7e !important;
           }
 
           .button:nth-child(5):hover .icon {

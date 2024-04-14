@@ -8,12 +8,12 @@ import { SidenavbarComponent } from './layout/sidenavbar/sidenavbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ResponsiveDirective } from './directives/responsive.directive';
 import { MaterialModule } from './shared/material-module';
 import { TopbarComponent } from './layout/topbar/topbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent,
     FooterComponent,
     ResponsiveDirective
   ],
@@ -32,8 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,  ],
   providers: [],
   bootstrap: [AppComponent]
 })

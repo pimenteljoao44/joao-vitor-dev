@@ -16,11 +16,13 @@ export class SidenavbarComponent {
   constructor(private observer: BreakpointObserver) {}
 
   ngAfterViewInit() {
-    this.observer.observe(['(min-width: 800px)']).subscribe((res) => {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
       this.isMobile = res.matches;
+      if (!this.isMobile && this.drawer) {
+        this.drawer.close();
+      }
     });
   }
-
 
   toggleSidenav() {
     this.drawer.toggle();

@@ -78,14 +78,7 @@
         background: #205f7f;
       }
       .button:nth-child(3):hover .icon {
-        background: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-          #d6249f 60%,
-          #285aeb 90%
-        );
+        background: #128c7e !important;
       }
       .button:nth-child(4):hover .icon {
         background: #333;
@@ -103,7 +96,7 @@
         color: #205f7f;
       }
       .button:nth-child(3):hover span {
-        color: #e1306c;
+        color: #3a6e43;
       }
       .button:nth-child(4):hover span {
         color: #333;
@@ -117,9 +110,8 @@
       display: grid;
       padding: 1rem 2rem;
       position: absolute;
-      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       width: 90%;
       max-width: 80rem;
       height: auto;
@@ -178,6 +170,18 @@
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
         }
       }
+
+      .profile-picture-container {
+        width: 100%;
+        max-width: 250px;
+        margin: 20px auto;
+        text-align: center;
+      }
+      .profile-picture {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -190,6 +194,20 @@
     .home {
       grid-template-rows: 1fr 1fr 0.5fr;
       padding: 3rem 5rem;
+
+      .profile-picture {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .profile-picture {
+          max-width: 300px;
+        }
+      }
 
       .name {
         font-size: 4.5rem;
