@@ -18,7 +18,7 @@ export class SidenavbarComponent {
   ngAfterViewInit() {
     this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
       this.isMobile = res.matches;
-      if (!this.isMobile && this.drawer) {
+      if (this.isMobile && this.drawer) {
         this.drawer.close();
       }
     });
